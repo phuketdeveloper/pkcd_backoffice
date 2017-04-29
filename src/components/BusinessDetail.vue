@@ -125,8 +125,7 @@
       },
 
       coverSrc () {
-        return 'http://128.199.205.55:49160/api/images/' + this.business.cover + '?access_token=' + this.access_token
-        // return 'http://localhost:3003/api/images/' + this.business.cover + '?access_token=' + this.access_token
+        return this.$http.options.root + '/images/' + this.business.cover + '?access_token=' + this.access_token
       },
 
       index () {
